@@ -1,0 +1,15 @@
+#navbar{
+    background-color:rgb(9, 170, 50)
+}
+
+.navigation{
+    justify-content: space-between;
+}
+
+
+.item{
+    margin:10px;
+    padding-right:15px;
+    padding-left:15px;
+    text-align:center;
+}
