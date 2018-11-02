@@ -1,0 +1,178 @@
+/* line 5, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../../sass/bases/_index.scss */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 11, ../../sass/bases/_index.scss */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+/* line 17, ../../sass/bases/_index.scss */
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 1, ../../sass/themes/_flex.scss */
+.flex-column {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: center;
+  flex-direction: center;
+}
+
+/* line 8, ../../sass/themes/_flex.scss */
+.flex-row {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: center;
+  flex-direction: center;
+}
+
+/* line 15, ../../sass/themes/_flex.scss */
+.grow {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+}
+
+/* line 1, ../../sass/layout/_navbar.scss */
+#navbar {
+  position: fixed;
+  background-color: #2f2e2e;
+  width: 100%;
+  height: 100px;
+}
+
+/* line 8, ../../sass/layout/_navbar.scss */
+.navigation {
+  justify-content: center;
+  max-width: 80%;
+}
+
+/* line 13, ../../sass/layout/_navbar.scss */
+.logo-container {
+  width: 150px;
+}
+/* line 15, ../../sass/layout/_navbar.scss */
+.logo-container img {
+  width: 80%;
+  height: auto;
+}
+
+/* line 22, ../../sass/layout/_navbar.scss */
+.item {
+  margin: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  text-align: center;
+  color: white;
+  width: 150px;
+}
+
+/* line 1, ../../sass/modules/_home.scss */
+#home {
+  height: 100vh;
+  background-color: #d5d5d5;
+}
+
+/* line 6, ../../sass/modules/_home.scss */
+.presentation {
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* line 13, ../../sass/modules/_home.scss */
+.presentation .title {
+  color: #a8c835;
+  text-transform: uppercase;
+  font-size: 50px;
+  margin: 20px;
+}
+/* line 19, ../../sass/modules/_home.scss */
+.presentation .mantra {
+  color: white;
+}

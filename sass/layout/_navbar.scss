@@ -1,0 +1,29 @@
+#navbar{
+    position:fixed;
+    background-color:rgb(47, 46, 46);
+    width:100%;
+    height:$navbarHeight;
+}
+
+.navigation{
+    justify-content: center;
+    max-width:80%;
+}
+
+.logo-container{
+    width:150px;
+    img{
+        width: 80%;
+        height:auto;
+    }
+}
+
+
+.item{
+    margin:10px;
+    padding-right:15px;
+    padding-left:15px;
+    text-align:center;
+    color:white;
+    width:150px;
+}

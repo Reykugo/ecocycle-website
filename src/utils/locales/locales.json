@@ -7,5 +7,10 @@
     "Home":{
         "FR":"Accueil",
         "EN": "Home"
+    },
+
+    "About":{
+        "FR":"Qui sommes nous?",
+        "EN":"About us"
     }
 }

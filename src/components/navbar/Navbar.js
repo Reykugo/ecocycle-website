@@ -18,11 +18,15 @@ class Navbar extends Component {
 
     render() {
         return (
-            <nav id="navbar" className="navigation-container flex-div-row ">
-                <div className="navigation flex-div-row">
+            <nav id="navbar" className="navigation-container flex-row ">
+                <div className="logo-container"><img src="http://pluspng.com/img-png/eco-png-eco-logo-1417.png" alt="logo"></img></div>
+                <div className="navigation flex-row grow">
                     <div className="item"><a href="#home" className="">{t('Home')}</a></div>
-                    <div className="item" onClick={this.switchLanguage}>{this.props.lang}</div>
+                    <div className="item"><a href="#share-co" className="">{t('Share&Co')}</a></div>
+                    <div className="item"><a href="#eco-scan" className="">{t('Eco-Scan')}</a></div>
+                    <div className="item"><a href="#about" className="">{t('About')}</a></div>
                 </div>
+                <div className="item" onClick={this.switchLanguage}>{this.props.lang}</div>
             </nav>
         );
     }
