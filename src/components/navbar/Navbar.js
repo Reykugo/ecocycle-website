@@ -16,17 +16,30 @@ class Navbar extends Component {
         this.props.setLanguage(lang)
     }
 
+    showNav(e){
+        e.preventDefault();
+        let nav = document.getElementById('nav')
+        if (nav.className === "navigation flex-row grow"){
+            nav.className += " opened"
+        }else{
+            nav.className = "navigation flex-row grow";
+        }
+    }
+
     render() {
         return (
             <nav id="navbar" className="navigation-container flex-row ">
-                <div className="logo-container"><img src="http://pluspng.com/img-png/eco-png-eco-logo-1417.png" alt="logo"></img></div>
-                <div className="navigation flex-row grow">
+                <div className="navbar-header">
+                    <div className="logo-container"><img src="http://pluspng.com/img-png/eco-png-eco-logo-1417.png" alt="logo"></img></div>
+                    <i class="burger fa fa-bars" onClick={this.showNav}></i>
+                </div>
+                <div id='nav' className="navigation flex-row grow">
                     <div className="item"><a href="#home" className="">{t('Home')}</a></div>
                     <div className="item"><a href="#share-co" className="">{t('Share&Co')}</a></div>
                     <div className="item"><a href="#eco-scan" className="">{t('Eco-Scan')}</a></div>
                     <div className="item"><a href="#about" className="">{t('About')}</a></div>
+                    <div className="item" onClick={this.switchLanguage}>{this.props.lang}</div>
                 </div>
-                <div className="item" onClick={this.switchLanguage}>{this.props.lang}</div>
             </nav>
         );
     }

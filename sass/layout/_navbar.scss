@@ -1,13 +1,43 @@
 #navbar{
-    position:fixed;
     background-color:rgb(47, 46, 46);
     width:100%;
-    height:$navbarHeight;
+    height:100px;
+    .burger{
+        cursor:pointer;
+        color:white;
+        display:none;
+        margin-right: 20px;
+    }
+
+    @media screen and (max-width:$screen-md){
+        position:relative;
+        height:auto;
+        @include flex-direction(column);
+        @include align-items(flex-start);
+        .navbar-header{
+            width:100%;
+            display:flex;
+            @include justify-content(space-between);
+            @include align-items(center);
+        }
+        .burger{
+            display:block;
+        }
+    }
 }
 
 .navigation{
     justify-content: center;
     max-width:80%;
+    &.opened{
+        display:flex;
+    }
+    @media screen and (max-width:$screen-md){
+        display:none;
+        width:100%;
+        margin:20px;
+        @include flex-direction(column)
+    }
 }
 
 .logo-container{
@@ -26,4 +56,8 @@
     text-align:center;
     color:white;
     width:150px;
+    @media screen and (max-width:$screen-md){
+        width:100%;
+        text-align: start;
+    }
 }
