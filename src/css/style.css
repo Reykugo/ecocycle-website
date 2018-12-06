@@ -118,8 +118,10 @@ a {
   background-color: #2f2e2e;
   width: 100%;
   height: 100px;
+  position: fixed;
+  z-index: 1;
 }
-/* line 5, ../../sass/layout/_navbar.scss */
+/* line 7, ../../sass/layout/_navbar.scss */
 #navbar .burger {
   cursor: pointer;
   color: white;
@@ -136,7 +138,7 @@ a {
     -webkit-align-items: flex-start;
     align-items: flex-start;
   }
-  /* line 17, ../../sass/layout/_navbar.scss */
+  /* line 19, ../../sass/layout/_navbar.scss */
   #navbar .navbar-header {
     width: 100%;
     display: flex;
@@ -145,23 +147,23 @@ a {
     -webkit-align-items: center;
     align-items: center;
   }
-  /* line 23, ../../sass/layout/_navbar.scss */
+  /* line 25, ../../sass/layout/_navbar.scss */
   #navbar .burger {
     display: block;
   }
 }
 
-/* line 29, ../../sass/layout/_navbar.scss */
+/* line 31, ../../sass/layout/_navbar.scss */
 .navigation {
   justify-content: center;
   max-width: 80%;
 }
-/* line 32, ../../sass/layout/_navbar.scss */
+/* line 34, ../../sass/layout/_navbar.scss */
 .navigation.opened {
   display: flex;
 }
 @media screen and (max-width: 768px) {
-  /* line 29, ../../sass/layout/_navbar.scss */
+  /* line 31, ../../sass/layout/_navbar.scss */
   .navigation {
     display: none;
     width: 100%;
@@ -171,17 +173,17 @@ a {
   }
 }
 
-/* line 43, ../../sass/layout/_navbar.scss */
+/* line 45, ../../sass/layout/_navbar.scss */
 .logo-container {
   width: 150px;
 }
-/* line 45, ../../sass/layout/_navbar.scss */
+/* line 47, ../../sass/layout/_navbar.scss */
 .logo-container img {
   width: 80%;
   height: auto;
 }
 
-/* line 52, ../../sass/layout/_navbar.scss */
+/* line 54, ../../sass/layout/_navbar.scss */
 .item {
   margin: 10px;
   padding-right: 15px;
@@ -191,10 +193,10 @@ a {
   width: 150px;
 }
 @media screen and (max-width: 768px) {
-  /* line 52, ../../sass/layout/_navbar.scss */
+  /* line 54, ../../sass/layout/_navbar.scss */
   .item {
     width: 100%;
-    text-align: start;
+    text-align: end;
   }
 }
 
@@ -229,66 +231,75 @@ a {
   color: white;
 }
 
-/* line 1, ../../sass/modules/_share&co.scss */
-.share-co {
+/* line 1, ../../sass/modules/_product-block.scss */
+.product-block {
   width: 100%;
   height: 100vh;
   text-align: center;
 }
-/* line 5, ../../sass/modules/_share&co.scss */
-.share-co .img-container {
-  width: 60%;
-}
-/* line 7, ../../sass/modules/_share&co.scss */
-.share-co .img-container img {
-  width: 50%;
-  height: auto;
-}
-/* line 12, ../../sass/modules/_share&co.scss */
-.share-co .description-container {
+/* line 5, ../../sass/modules/_product-block.scss */
+.product-block .description-container {
   background-color: #ffef98;
-  width: 40%;
   height: 100%;
 }
-/* line 17, ../../sass/modules/_share&co.scss */
-.share-co .description {
+/* line 8, ../../sass/modules/_product-block.scss */
+.product-block .description-container .description {
   padding: 20%;
   height: 100%;
 }
-/* line 20, ../../sass/modules/_share&co.scss */
-.share-co .description .title {
+/* line 11, ../../sass/modules/_product-block.scss */
+.product-block .description-container .description .title {
   font-size: 30pt;
   margin-bottom: 20%;
 }
-
-/* line 1, ../../sass/modules/_ecoScan.scss */
-.eco-scan {
-  width: 100%;
-  height: 100vh;
-  text-align: center;
+/* line 18, ../../sass/modules/_product-block.scss */
+.product-block.share-co .img-container {
+  width: 60%;
 }
-/* line 5, ../../sass/modules/_ecoScan.scss */
-.eco-scan .img-container {
-  width: 40%;
-}
-/* line 7, ../../sass/modules/_ecoScan.scss */
-.eco-scan .img-container img {
+/* line 20, ../../sass/modules/_product-block.scss */
+.product-block.share-co .img-container img {
   width: 50%;
   height: auto;
 }
-/* line 12, ../../sass/modules/_ecoScan.scss */
-.eco-scan .description-container {
-  background-color: #ffef98;
+/* line 25, ../../sass/modules/_product-block.scss */
+.product-block.share-co .description-container {
+  width: 40%;
+}
+/* line 31, ../../sass/modules/_product-block.scss */
+.product-block.eco-scan .img-container {
+  width: 40%;
+}
+/* line 33, ../../sass/modules/_product-block.scss */
+.product-block.eco-scan .img-container img {
+  width: 50%;
+  height: auto;
+}
+/* line 38, ../../sass/modules/_product-block.scss */
+.product-block.eco-scan .description-container {
   width: 60%;
-  height: 100%;
 }
-/* line 17, ../../sass/modules/_ecoScan.scss */
-.eco-scan .description {
-  padding: 20%;
-  height: 100%;
-}
-/* line 20, ../../sass/modules/_ecoScan.scss */
-.eco-scan .description .title {
-  font-size: 30pt;
-  margin-bottom: 20%;
+@media screen and (max-width: 768px) {
+  /* line 1, ../../sass/modules/_product-block.scss */
+  .product-block {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    height: max-content;
+  }
+  /* line 47, ../../sass/modules/_product-block.scss */
+  .product-block.share-co .img-container, .product-block.eco-scan .img-container {
+    margin-top: 20px;
+    width: 100%;
+  }
+  /* line 51, ../../sass/modules/_product-block.scss */
+  .product-block.share-co .description-container, .product-block.eco-scan .description-container {
+    width: 100%;
+  }
+  /* line 53, ../../sass/modules/_product-block.scss */
+  .product-block.share-co .description-container .description, .product-block.eco-scan .description-container .description {
+    padding: 20px;
+  }
+  /* line 55, ../../sass/modules/_product-block.scss */
+  .product-block.share-co .description-container .description .title, .product-block.eco-scan .description-container .description .title {
+    margin-bottom: 20px;
+  }
 }

@@ -6,7 +6,7 @@ import t from '../../utils/locales/Locales';
 class ShareCo extends Component {
     render() {
         return (
-            <div className="share-co flex-row flex-center">
+            <div id="share-co" className="product-block share-co flex-row flex-center">
                 <div className="description-container flex-column flex-center">
                     <div className="description">
                         <h1 className="title">{t('SHARE & CO')}</h1>
