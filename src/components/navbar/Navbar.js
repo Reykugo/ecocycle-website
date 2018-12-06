@@ -28,10 +28,10 @@ class Navbar extends Component {
 
     render() {
         return (
-            <nav id="navbar" className="navigation-container flex-row ">
+            <nav id="navbar" className="navigation-container flex-row flex-center">
                 <div className="navbar-header">
                     <div className="logo-container"><img src="http://pluspng.com/img-png/eco-png-eco-logo-1417.png" alt="logo"></img></div>
-                    <i class="burger fa fa-bars" onClick={this.showNav}></i>
+                    <i className="burger fa fa-bars" onClick={this.showNav}></i>
                 </div>
                 <div id='nav' className="navigation flex-row grow">
                     <div className="item"><a href="#home" className="">{t('Home')}</a></div>

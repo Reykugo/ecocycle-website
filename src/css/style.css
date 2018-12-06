@@ -87,27 +87,27 @@ a {
 .flex-column {
   display: -webkit-flex;
   display: flex;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-flex-direction: center;
-  flex-direction: center;
+  -webkit-flex-direction: column;
+  flex-direction: column;
 }
 
-/* line 8, ../../sass/themes/_flex.scss */
+/* line 6, ../../sass/themes/_flex.scss */
 .flex-row {
   display: -webkit-flex;
   display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+
+/* line 12, ../../sass/themes/_flex.scss */
+.flex-center {
   -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   align-items: center;
-  -webkit-flex-direction: center;
-  flex-direction: center;
 }
 
-/* line 15, ../../sass/themes/_flex.scss */
+/* line 17, ../../sass/themes/_flex.scss */
 .grow {
   -webkit-flex-grow: 1;
   flex-grow: 1;
@@ -227,4 +227,68 @@ a {
 /* line 20, ../../sass/modules/_home.scss */
 .presentation .mantra {
   color: white;
+}
+
+/* line 1, ../../sass/modules/_share&co.scss */
+.share-co {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+/* line 5, ../../sass/modules/_share&co.scss */
+.share-co .img-container {
+  width: 60%;
+}
+/* line 7, ../../sass/modules/_share&co.scss */
+.share-co .img-container img {
+  width: 50%;
+  height: auto;
+}
+/* line 12, ../../sass/modules/_share&co.scss */
+.share-co .description-container {
+  background-color: #ffef98;
+  width: 40%;
+  height: 100%;
+}
+/* line 17, ../../sass/modules/_share&co.scss */
+.share-co .description {
+  padding: 20%;
+  height: 100%;
+}
+/* line 20, ../../sass/modules/_share&co.scss */
+.share-co .description .title {
+  font-size: 30pt;
+  margin-bottom: 20%;
+}
+
+/* line 1, ../../sass/modules/_ecoScan.scss */
+.eco-scan {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+/* line 5, ../../sass/modules/_ecoScan.scss */
+.eco-scan .img-container {
+  width: 40%;
+}
+/* line 7, ../../sass/modules/_ecoScan.scss */
+.eco-scan .img-container img {
+  width: 50%;
+  height: auto;
+}
+/* line 12, ../../sass/modules/_ecoScan.scss */
+.eco-scan .description-container {
+  background-color: #ffef98;
+  width: 60%;
+  height: 100%;
+}
+/* line 17, ../../sass/modules/_ecoScan.scss */
+.eco-scan .description {
+  padding: 20%;
+  height: 100%;
+}
+/* line 20, ../../sass/modules/_ecoScan.scss */
+.eco-scan .description .title {
+  font-size: 30pt;
+  margin-bottom: 20%;
 }

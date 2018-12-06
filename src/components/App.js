@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Navbar from './navbar/Navbar';
 import Home from './home/Home'
+import ShareCo from './share&co/Share&Co';
+import EcoScan from './eco-scan/EcoScan';
 
 class App extends Component {
   render() {
@@ -10,6 +12,8 @@ class App extends Component {
           <Navbar/>
         </header>
         <Home/>
+        <EcoScan/>
+        <ShareCo/>
       </div>
     );
   }
