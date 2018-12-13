@@ -1,14 +1,25 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { DefaultPlayer as Video } from 'react-html5video';
+import 'react-html5video/dist/styles.css';
 
 class Home extends Component {
+
+    componentDidMount(){
+        document.getElementById('hero-video').play();
+    }
+
     render() {
         return (
             <div id="home">
+                {/*<div className="transparence-filter"></div>*/}
+                <video muted loop id="hero-video" >
+                    <source src={require("../../videos/Hero.mp4")} type="video/mp4" />
+                </video>
                 <div className="presentation">
                     <h1 className="title">Eco cycle</h1>
                     <p className="mantra">
-                        Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
+                        Aliquip tempor labore labore aute et elit commodo minim tempor labore reprehenderit.
                     </p>
                 </div>
             </div>

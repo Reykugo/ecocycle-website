@@ -28,9 +28,9 @@ class Navbar extends Component {
 
     render() {
         return (
-            <nav id="navbar" className="navigation-container flex-row flex-center">
+            <nav id="navbar" className="navigation-container flex-row flex-center flex-start">
                 <div className="navbar-header">
-                    <div className="logo-container"><img src="http://pluspng.com/img-png/eco-png-eco-logo-1417.png" alt="logo"></img></div>
+                    <div className="logo-container"><img src={require("../../images/logo.jpg")} alt="logo"></img></div>
                     <i className="burger fa fa-bars" onClick={this.showNav}></i>
                 </div>
                 <div id='nav' className="navigation flex-row grow">

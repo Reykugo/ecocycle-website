@@ -10,3 +10,11 @@
 
 @import 'modules/home';
 @import 'modules/product-block';
+@import 'modules/application';
+
+@include font-face("Havana", "havana");
+
+* {
+ font-size: 100%;
+ font-family: $mainFont;
+}
