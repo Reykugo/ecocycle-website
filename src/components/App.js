@@ -4,6 +4,7 @@ import Home from './home/Home'
 import ShareCo from './share&co/Share&Co';
 import EcoScan from './eco-scan/EcoScan';
 import Application from './application/Application';
+import Footer from './footer/Footer';
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
         <ShareCo/>
         <EcoScan/>
         <Application/>
+        <Footer />
       </div>
     );
   }
