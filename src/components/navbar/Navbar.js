@@ -30,15 +30,15 @@ class Navbar extends Component {
         return (
             <nav id="navbar" className="navigation-container flex-row flex-center flex-start">
                 <div className="navbar-header">
-                    <div className="logo-container"><img src={require("../../images/logo.jpg")} alt="logo"></img></div>
+                    <div className="logo-container"><img src={require("../../images/logo.png")} alt="logo"></img></div>
                     <i className="burger fa fa-bars" onClick={this.showNav}></i>
                 </div>
-                <div id='nav' className="navigation flex-row grow">
-                    <div className="item"><a href="#home" className="">{t('Home')}</a></div>
-                    <div className="item"><a href="#share-co" className="">{t('Share&Co')}</a></div>
-                    <div className="item"><a href="#eco-scan" className="">{t('Eco-Scan')}</a></div>
-                    <div className="item"><a href="#about" className="">{t('About')}</a></div>
-                    <div className="item" onClick={this.switchLanguage}>{this.props.lang}</div>
+                <div id='nav' className="navigation flex-row flex-center grow">
+                    <div className="item flex-row flex-center"><a href="#home" className="">{t('Home')}</a></div>
+                    <div className="item flex-row flex-center"><a href="#share-co" className="">{t('Share&Co')}</a></div>
+                    <div className="item flex-row flex-center"><a href="#eco-scan" className="">{t('Eco-Scan')}</a></div>
+                    <div className="item flex-row flex-center"><a href="#about" className="">{t('About')}</a></div>
+                    <div className="item flex-row flex-center" onClick={this.switchLanguage}><a href="#">{this.props.lang}</a></div>
                 </div>
             </nav>
         );

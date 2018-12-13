@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import t from '../../utils/locales/Locales';
-import ReactPlayer from 'react-player';
+import TextBlock from '../commons/TextBlock';
 
 class ShareCo extends Component {
     render() {
@@ -11,9 +11,14 @@ class ShareCo extends Component {
                 <div className="description-container flex-column flex-center">
                     <div className="description">
                         <h1 className="title">{t('SHARE & CO')}</h1>
-                        <p className="text">
-                            Proident proident duis et minim ut do do aliqua sint aliqua. Veniam deserunt dolor dolor in commodo excepteur amet aute anim. Non occaecat laborum reprehenderit dolore adipisicing. Officia ut officia nostrud irure nulla minim. Est officia veniam sit pariatur exercitation.
-                        </p>
+                        {/*<p className="text">
+                            Notre machine SHARE&CO est un nouveau concept alliant publicité, promotions et bien-sûr le recyclage du verre et du plastique.<br /> <br />
+                            Le principe est simple : Les grandes marques font de la publicité sur l’écran de notre machine et donnent des bons d’achat aux utilisateurs de l’application &Co Scan qui recyclent leurs bouteilles.<br /><br />
+L’utilité est multiple : Les marques adoptent une stratégie RSE, et se donnent une bonne image tout en développant les achats dans leurs points de vente. 
+Les utilisateurs, eux, adoptent un geste éco responsable et font des économies chez leurs marques préférées.<br /><br />
+En fonction du nombre de bouteilles recyclées, un cumul de point se fait et les utilisateurs peuvent mesurer leur performance dans un classement.
+        </p>*/}
+                        <TextBlock title="Description" iconClass="fas fa-info" text="share&co-description"/>
                     </div>
                 </div>
                 <div className="img-container">

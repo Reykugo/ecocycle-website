@@ -12,5 +12,16 @@
     "About":{
         "FR":"Qui sommes nous?",
         "EN":"About us"
+    },
+
+    "share&co-description":{
+        "FR": "Notre machine SHARE&CO est un nouveau concept alliant publicité, promotions et bien-sûr le recyclage du verre et du plastique."
+    },
+    "share&co-purpose":{
+        "FR": "Notre machine SHARE&CO est un nouveau concept alliant publicité, promotions et bien-sûr le recyclage du verre et du plastique."
+    },
+
+    "share&co-utility":{
+        "FR": "L’utilité est multiple : Les marques adoptent une stratégie RSE, et se donnent une bonne image tout en développant les achats dans leurs points de vente. Les utilisateurs, eux, adoptent un geste éco responsable et font des économies chez leurs marques préférées."
     }
 }
