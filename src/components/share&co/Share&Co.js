@@ -10,13 +10,13 @@ class ShareCo extends Component {
     }
     render() {
         return (
-            <div id="share-co" className="product-block share-co flex-row flex-center">
+            <section id="share-co" className="product-block share-co flex-row flex-center">
                 <div className="description-container flex-column flex-center">
                     <div className="description">
                         <h1 className="title">{t('SHARE & CO')}</h1>
                         <TextBlock title="Description" iconClass="fas fa-info" text="share&co-description"/>
                         <TextBlock title="Principe" iconClass="fas fa-info" text="share&co-purpose"/>
-                        <TextBlock title="Utilité" iconClass="fas fa-info" text="share&co-utility"/>
+                        <TextBlock title="Utilité" iconClass="fas fa-plus" text="share&co-utility"/>
                     </div>
                 </div>
                 <div className="video-container">
@@ -25,7 +25,7 @@ class ShareCo extends Component {
                         <source src={require("../../videos/machine-ext.mp4")} type="video/mp4" />
                     </video>
                 </div>
-            </div>
+            </section>
         );
     }
 }

@@ -1,12 +1,13 @@
-function scrollNav() {
-    $('.nav div').click(function () {
-        //Animate
-        $('html, body').stop().animate({
-            scrollTop: $($(this).attr('href')).offset().top - 160
-        }, 400);
-        return false;
+/*$(document).bind('scroll', function (e) {
+    $('section').each(function () {
+        if (
+            $(this).offset().top < window.pageYOffset + 10
+            //begins before top
+            && $(this).offset().top + $(this).height() > window.pageYOffset + 10
+            //but ends in visible area
+            //+ 10 allows you to change hash before it hits the top border
+        ) {
+            window.location.hash = $(this).attr('id');
+        }
     });
-    $('.scrollTop a').scrollTop();
-}
-scrollNav();
-
+});*/

@@ -6,7 +6,7 @@ import t from '../../utils/locales/Locales';
 class ShareCo extends Component {
     render() {
         return (
-            <div id="eco-scan" className="product-block eco-scan flex-row flex-center">
+            <section id="eco-scan" className="product-block eco-scan flex-row flex-center">
                 <div className="img-container">
                     <img src={require("../../images/ecoScan_image.png")} alt="" />
                 </div>
@@ -18,8 +18,7 @@ class ShareCo extends Component {
                         </p>
                     </div>
                 </div>
-
-            </div>
+            </section>
         );
     }
 }

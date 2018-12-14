@@ -168,22 +168,25 @@ a {
 }
 /* line 38, ../../sass/layout/_navbar.scss */
 #navbar .item {
-  padding-right: 15px;
-  padding-left: 15px;
   text-align: center;
   color: #e6e3e3;
   width: 150px;
   height: 100%;
 }
-/* line 45, ../../sass/layout/_navbar.scss */
+/* line 43, ../../sass/layout/_navbar.scss */
 #navbar .item a, #navbar .item .content {
   height: 100%;
 }
-/* line 48, ../../sass/layout/_navbar.scss */
+/* line 46, ../../sass/layout/_navbar.scss */
+#navbar .item a.active {
+  background-color: #002d55;
+  transform: scale(1.1);
+}
+/* line 50, ../../sass/layout/_navbar.scss */
 #navbar .item:hover {
   background-color: black;
 }
-/* line 50, ../../sass/layout/_navbar.scss */
+/* line 52, ../../sass/layout/_navbar.scss */
 #navbar .item:hover a {
   transform: scale(1.1);
 }
@@ -208,7 +211,7 @@ a {
     -webkit-align-items: flex-start;
     align-items: flex-start;
   }
-  /* line 68, ../../sass/layout/_navbar.scss */
+  /* line 70, ../../sass/layout/_navbar.scss */
   #navbar .navbar-header {
     width: 100%;
     display: flex;
@@ -217,7 +220,7 @@ a {
     -webkit-align-items: center;
     align-items: center;
   }
-  /* line 74, ../../sass/layout/_navbar.scss */
+  /* line 76, ../../sass/layout/_navbar.scss */
   #navbar .burger {
     display: block;
   }

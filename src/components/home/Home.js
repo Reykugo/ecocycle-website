@@ -10,7 +10,7 @@ class Home extends Component {
 
     render() {
         return (
-            <div id="home">
+            <section id="home">
                 {/*<div className="transparence-filter"></div>*/}
                 <video muted loop id="hero-video" >
                     <source src={require("../../videos/Hero.mp4")} type="video/mp4" />
@@ -20,7 +20,7 @@ class Home extends Component {
                         <i className="fa fa-chevron-down"></i>
                     </div>
                 </Link> 
-            </div>
+            </section>
         );
     }
 }

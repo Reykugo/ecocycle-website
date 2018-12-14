@@ -2,15 +2,15 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import t from '../../utils/locales/Locales';
-import { HashLink as Link } from 'react-router-hash-link';
 import {setLanguage} from '../../redux/actions/app';
+import NavbarLink from './NavbarLink';
+import { NavHashLink as Link } from 'react-router-hash-link';
 
 class Navbar extends Component {
     constructor(props) {
         super(props);
         this.switchLanguage = this.switchLanguage.bind(this)
     }
-
     switchLanguage(){
         let lang = ""
         this.props.lang === "FR"? lang = "EN": lang="FR" 
@@ -31,39 +31,19 @@ class Navbar extends Component {
         return (
             <nav id="navbar" className="navigation-container flex-row flex-center flex-start">
                 <div className="navbar-header">
-                    <div className="logo-container"><img src={require("../../images/logo.png")} alt="logo"></img></div>
+                    <Link smooth to="#home">
+                        <div className="logo-container" ><img src={require("../../images/logo.png")} alt="logo"></img></div>
+                    </Link>
                     <i className="burger fa fa-bars" onClick={this.showNav}></i>
                 </div>
                 <div id='nav' className="navigation flex-row flex-center grow">
-                    <div className="item flex-row flex-center">
-                        <Link smooth  to="#home">
-                            <div className="content flex-row flex-center">{t('Home')} </div>
-                        </Link>
-                    </div>
-                    <div className="item flex-row flex-center">
-                        <Link smooth to="#share-co">
-                            <div className="content flex-row flex-center">{t('Share&Co')}</div>
-                        </Link>
-                    </div>
-                    <div className="item flex-row flex-center">
-                        <Link smooth to="#eco-scan">
-                            <div className="content flex-row flex-center">{t('Eco-Scan')}</div>
-                        </Link>
-                    </div>
-                    <div className="item flex-row flex-center">
-                        <Link smooth to="#application">
-                            <div className="content flex-row flex-center">{t('Application')}</div>
-                        </Link>
-                    </div>
-                    <div className="item flex-row flex-center">
-                        <Link smooth to="#about">
-                            <div className="content flex-row flex-center">{t('About')}</div>
-                        </Link>
-                    </div>
+                    <NavbarLink to="#home" label="Home"/>
+                    <NavbarLink to="#share-co" label="Share&Co"/>
+                    <NavbarLink to="#eco-scan" label="Eco-Scan"/>
+                    <NavbarLink to="#application" label="Actualités"/>
+                    <NavbarLink to="#about" label="About"/>
                     <div className="item flex-row flex-center" onClick={this.switchLanguage}>
-                        <a href="#">
-                            <div className="content flex-row flex-center">{this.props.lang}</div>
-                        </a>
+                        {this.props.lang}
                     </div>
                 </div>
             </nav>
