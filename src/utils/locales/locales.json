@@ -31,5 +31,15 @@
     "Actualités":{
         "FR":"Actualités",
         "EN":"Actuality"
+    },
+
+    "Utilité":{
+        "FR":"Utilité",
+        "EN":"Utility"
+    },
+
+    "Principe":{
+        "FR":"Principe",
+        "EN":"Principle"
     }
 }
