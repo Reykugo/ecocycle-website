@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import t from '../../utils/locales/Locales';
+import { HashLink as Link } from 'react-router-hash-link';
 import {setLanguage} from '../../redux/actions/app';
 
 class Navbar extends Component {
@@ -34,11 +35,36 @@ class Navbar extends Component {
                     <i className="burger fa fa-bars" onClick={this.showNav}></i>
                 </div>
                 <div id='nav' className="navigation flex-row flex-center grow">
-                    <div className="item flex-row flex-center"><a href="#home" className="">{t('Home')}</a></div>
-                    <div className="item flex-row flex-center"><a href="#share-co" className="">{t('Share&Co')}</a></div>
-                    <div className="item flex-row flex-center"><a href="#eco-scan" className="">{t('Eco-Scan')}</a></div>
-                    <div className="item flex-row flex-center"><a href="#about" className="">{t('About')}</a></div>
-                    <div className="item flex-row flex-center" onClick={this.switchLanguage}><a href="#">{this.props.lang}</a></div>
+                    <div className="item flex-row flex-center">
+                        <Link smooth  to="#home">
+                            <div className="content flex-row flex-center">{t('Home')} </div>
+                        </Link>
+                    </div>
+                    <div className="item flex-row flex-center">
+                        <Link smooth to="#share-co">
+                            <div className="content flex-row flex-center">{t('Share&Co')}</div>
+                        </Link>
+                    </div>
+                    <div className="item flex-row flex-center">
+                        <Link smooth to="#eco-scan">
+                            <div className="content flex-row flex-center">{t('Eco-Scan')}</div>
+                        </Link>
+                    </div>
+                    <div className="item flex-row flex-center">
+                        <Link smooth to="#application">
+                            <div className="content flex-row flex-center">{t('Application')}</div>
+                        </Link>
+                    </div>
+                    <div className="item flex-row flex-center">
+                        <Link smooth to="#about">
+                            <div className="content flex-row flex-center">{t('About')}</div>
+                        </Link>
+                    </div>
+                    <div className="item flex-row flex-center" onClick={this.switchLanguage}>
+                        <a href="#">
+                            <div className="content flex-row flex-center">{this.props.lang}</div>
+                        </a>
+                    </div>
                 </div>
             </nav>
         );

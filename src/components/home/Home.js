@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import {HashLink as Link} from 'react-router-hash-link';
 
 class Home extends Component {
 
@@ -14,12 +15,11 @@ class Home extends Component {
                 <video muted loop id="hero-video" >
                     <source src={require("../../videos/Hero.mp4")} type="video/mp4" />
                 </video>
-                {/*<div className="presentation">
-                    <h1 className="title">Eco cycle</h1>
-                    <p className="mantra">
-                        Aliquip tempor labore labore aute et elit commodo minim tempor labore reprehenderit.
-                    </p>
-                </div>*/}
+                <Link smooth to="#share-co">
+                    <div className="next-arrow">
+                        <i className="fa fa-chevron-down"></i>
+                    </div>
+                </Link> 
             </div>
         );
     }
