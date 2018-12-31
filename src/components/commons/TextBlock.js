@@ -9,7 +9,7 @@ class TextBlock extends Component {
         const{iconClass, title, text} = this.props;
         return (
             <div className="text-block">
-                <div className="header flex-row">
+                <div className="header flex-row flex-center">
                     <i className={iconClass}></i>
                     <h2 className="block-title">{t(title)}</h2>
                 </div>

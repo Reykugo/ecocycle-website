@@ -5,6 +5,7 @@
     position:fixed;
     z-index:1;
     opacity: 0.8;
+    transition: opacity 0.5s ease-in-out;
     &:hover{
         opacity: 1;
     }
@@ -40,6 +41,9 @@
         color:rgb(230, 227, 227);
         width:150px;
         height:100%;
+        .content{
+            font-family: $mainFont;
+        }
         a, .content{
             height:100%
         }
@@ -63,7 +67,7 @@
     }
 
     @media screen and (max-width:$screen-md){
-        position:relative;
+        position:fixed;
         height:auto;
         @include flex-direction(column);
         @include align-items(flex-start);

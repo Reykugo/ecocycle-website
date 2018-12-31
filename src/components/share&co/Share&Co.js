@@ -11,12 +11,12 @@ class ShareCo extends Component {
     render() {
         return (
             <section id="share-co" className="product-block share-co flex-row flex-center">
-                <div className="description-container flex-column flex-center">
+                <div className="description-container flex-column">
                     <div className="description">
                         <h1 className="title">{t('SHARE & CO')}</h1>
-                        <TextBlock title="Description" iconClass="fas fa-info" text="share&co-description"/>
-                        <TextBlock title="Principe" iconClass="fas fa-info" text="share&co-purpose"/>
-                        <TextBlock title="Utilité" iconClass="fas fa-plus" text="share&co-utility"/>
+                        <TextBlock title="Description" iconClass="fa fa-info" text="share&co-description"/>
+                        <TextBlock title="Principe" iconClass="fa fa-info" text="share&co-purpose"/>
+                        <TextBlock title="Utilité" iconClass="fa fa-plus" text="share&co-utility"/>
                     </div>
                 </div>
                 <div className="video-container">
