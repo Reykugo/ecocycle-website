@@ -1,0 +1,45 @@
+{
+    "language":{
+        "FR":"Langue",
+        "EN":"Language"
+    },
+
+    "Home":{
+        "FR":"Accueil",
+        "EN": "Home"
+    },
+
+    "About":{
+        "FR":"Qui sommes nous?",
+        "EN":"About us"
+    },
+
+    "share&co-description":{
+        "FR": "Notre machine SHARE&CO est un nouveau concept alliant publicité, promotions et bien-sûr le recyclage du verre et du plastique.",
+        "EN": "Our SHARE&CO machine is a new concept combining advertising, promotions and of course the recycling of glass and plastic."
+    },
+    "share&co-purpose":{
+        "FR": "Notre machine SHARE&CO est un nouveau concept alliant publicité, promotions et bien-sûr le recyclage du verre et du plastique.",
+        "EN": "Our SHARE&CO machine is a new concept combining advertising, promotions and of course the recycling of glass and plastic."
+    },
+
+    "share&co-utility":{
+        "FR": "L’utilité est multiple : Les marques adoptent une stratégie RSE, et se donnent une bonne image tout en développant les achats dans leurs points de vente. Les utilisateurs, eux, adoptent un geste éco responsable et font des économies chez leurs marques préférées. En fonction du nombre de bouteilles recyclées, un cumul de point se fait et les utilisateurs peuvent mesurer leur performance dans un classement.",
+        "EN": "The utility is multiple: The brands adopt a CSR strategy, and give themselves a good image while developing the purchases in their points of sale. The users, themselves, take an eco-friendly gesture and save at their favorite brands. Depending on the number of bottles recycled, a cumulative point is made and users can measure their performance in a ranking. "
+  
+    },
+    "Actualités":{
+        "FR":"Actualités",
+        "EN":"Actuality"
+    },
+
+    "Utilité":{
+        "FR":"Utilité",
+        "EN":"Utility"
+    },
+
+    "Principe":{
+        "FR":"Principe",
+        "EN":"Principle"
+    }
+}
