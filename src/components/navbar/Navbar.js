@@ -40,7 +40,7 @@ class Navbar extends Component {
                     <NavbarLink to="#home" label="Home"/>
                     <NavbarLink to="#share-co" label="Share&Co"/>
                     <NavbarLink to="#eco-scan" label="Jean-Fekoi"/>
-                    <NavbarLink to="#about" label="About"/>
+                    <NavbarLink to="#team" label="About"/>
                     <NavbarLink to="#application" label="Actuality"/>
                     <div className="item flex-row flex-center" onClick={this.switchLanguage}>
                         {this.props.lang}
