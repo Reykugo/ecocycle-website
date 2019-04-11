@@ -33,12 +33,12 @@ class Team extends Component {
                     <Badge 
                         img="guillaume.jpg"
                         name="Guillaume NOUGIER"
-                        job="Lead developper"
+                        job="Lead developer"
                     />
                     <Badge 
                         img="graham.jpg"
                         name="Graham Henderson"
-                        job="Developper"
+                        job="Network Engineer"
                     />
 
                 </div>
