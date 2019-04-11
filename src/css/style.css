@@ -245,7 +245,7 @@ a {
 
 /* line 1, ../../sass/layout/_footer.scss */
 footer {
-  height: 150px;
+  height: 130px;
   background-color: #2f2e2e;
   width: 100%;
   color: white;
@@ -359,7 +359,7 @@ footer .icons a i.fa:hover {
 /* line 1, ../../sass/modules/_product-block.scss */
 .product-block {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   text-align: center;
 }
 /* line 5, ../../sass/modules/_product-block.scss */
@@ -421,13 +421,30 @@ footer .icons a i.fa:hover {
 /* line 56, ../../sass/modules/_product-block.scss */
 .product-block.eco-scan .img-container {
   width: 40%;
+  height: 100%;
 }
-/* line 58, ../../sass/modules/_product-block.scss */
-.product-block.eco-scan .img-container img {
+/* line 59, ../../sass/modules/_product-block.scss */
+.product-block.eco-scan .img-container .smartphone-container {
+  position: relative;
   width: 50%;
+  max-width: calc(320px / 1.5);
+  max-height: calc(647px / 1.5);
+}
+/* line 64, ../../sass/modules/_product-block.scss */
+.product-block.eco-scan .img-container .smartphone-container .smartphone {
+  width: 100%;
   height: auto;
 }
-/* line 63, ../../sass/modules/_product-block.scss */
+/* line 68, ../../sass/modules/_product-block.scss */
+.product-block.eco-scan .img-container .smartphone-container .screen {
+  width: 91.5%;
+  height: 79.7%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+/* line 78, ../../sass/modules/_product-block.scss */
 .product-block.eco-scan .description-container {
   color: #538234;
   width: 60%;
@@ -439,35 +456,31 @@ footer .icons a i.fa:hover {
     flex-direction: column;
     height: max-content;
   }
-  /* line 74, ../../sass/modules/_product-block.scss */
+  /* line 89, ../../sass/modules/_product-block.scss */
   .product-block.share-co .img-container, .product-block.share-co .video-container, .product-block.eco-scan .img-container, .product-block.eco-scan .video-container {
     width: 100%;
   }
-  /* line 77, ../../sass/modules/_product-block.scss */
+  /* line 92, ../../sass/modules/_product-block.scss */
   .product-block.share-co .description-container, .product-block.eco-scan .description-container {
     width: 100%;
   }
-  /* line 79, ../../sass/modules/_product-block.scss */
+  /* line 94, ../../sass/modules/_product-block.scss */
   .product-block.share-co .description-container .description, .product-block.eco-scan .description-container .description {
     padding: 20px;
   }
-  /* line 81, ../../sass/modules/_product-block.scss */
+  /* line 96, ../../sass/modules/_product-block.scss */
   .product-block.share-co .description-container .description .title, .product-block.eco-scan .description-container .description .title {
     margin-bottom: 20px;
   }
-  /* line 88, ../../sass/modules/_product-block.scss */
+  /* line 103, ../../sass/modules/_product-block.scss */
   .product-block.eco-scan {
     display: table;
   }
-  /* line 90, ../../sass/modules/_product-block.scss */
+  /* line 105, ../../sass/modules/_product-block.scss */
   .product-block.eco-scan .img-container {
-    display: table-footer-group;
+    padding: 10% 0%;
   }
-  /* line 92, ../../sass/modules/_product-block.scss */
-  .product-block.eco-scan .img-container img {
-    margin-top: 20px;
-  }
-  /* line 96, ../../sass/modules/_product-block.scss */
+  /* line 108, ../../sass/modules/_product-block.scss */
   .product-block.eco-scan .description-container {
     display: table-header-group;
   }
@@ -491,4 +504,60 @@ footer .icons a i.fa:hover {
 /* line 14, ../../sass/modules/_application.scss */
 #application .video-container {
   width: 80%;
+}
+
+/* line 1, ../../sass/modules/_team.scss */
+#team {
+  width: 100%;
+  background-color: #F4F4F4;
+}
+/* line 4, ../../sass/modules/_team.scss */
+#team .title {
+  color: #869197;
+  width: 100%;
+  text-align: center;
+  margin: 15px;
+  font-size: 30pt;
+  margin-bottom: 30px;
+  font-family: "Havana";
+}
+/* line 13, ../../sass/modules/_team.scss */
+#team .team-badges {
+  flex-wrap: wrap;
+  flex: 3;
+  width: 100%;
+  height: 100%;
+}
+/* line 18, ../../sass/modules/_team.scss */
+#team .team-badges .badge {
+  width: 33%;
+  margin: 15px 0px;
+}
+/* line 21, ../../sass/modules/_team.scss */
+#team .team-badges .badge img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+/* line 27, ../../sass/modules/_team.scss */
+#team .team-badges .badge .name, #team .team-badges .badge .job {
+  color: #869197;
+}
+/* line 30, ../../sass/modules/_team.scss */
+#team .team-badges .badge .job {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  /* line 18, ../../sass/modules/_team.scss */
+  #team .team-badges .badge {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 576px) {
+  /* line 18, ../../sass/modules/_team.scss */
+  #team .team-badges .badge {
+    width: 100%;
+  }
 }

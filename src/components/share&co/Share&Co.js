@@ -15,7 +15,6 @@ class ShareCo extends Component {
                     <div className="description">
                         <h1 className="title">{t('SHARE & CO')}</h1>
                         <TextBlock title="Description" iconClass="fa fa-info" text="share&co-description"/>
-                        <TextBlock title="Principe" iconClass="fa fa-info" text="share&co-purpose"/>
                         <TextBlock title="Utilité" iconClass="fa fa-plus" text="share&co-utility"/>
                     </div>
                 </div>

@@ -4,8 +4,26 @@ import {HashLink as Link} from 'react-router-hash-link';
 
 class Home extends Component {
 
+    videoIsVisible(el) {
+        var rect = el.getBoundingClientRect();
+        return (
+            rect.bottom >= 0
+        );
+    }
+
+
+    playVideo(self){
+        let video = document.getElementById('hero-video');
+        if(self.videoIsVisible(video)){
+            video.play();
+        }else{
+            video.pause()
+        }
+    }
+
+
     componentDidMount(){
-        document.getElementById('hero-video').play();
+        window.addEventListener('scroll',() => this.playVideo(this));
     }
 
     render() {

@@ -39,9 +39,9 @@ class Navbar extends Component {
                 <div id='nav' className="navigation flex-row flex-center grow">
                     <NavbarLink to="#home" label="Home"/>
                     <NavbarLink to="#share-co" label="Share&Co"/>
-                    <NavbarLink to="#eco-scan" label="Eco-Scan"/>
-                    <NavbarLink to="#application" label="Actualités"/>
+                    <NavbarLink to="#eco-scan" label="Jean-Fekoi"/>
                     <NavbarLink to="#about" label="About"/>
+                    <NavbarLink to="#application" label="Actuality"/>
                     <div className="item flex-row flex-center" onClick={this.switchLanguage}>
                         {this.props.lang}
                     </div>

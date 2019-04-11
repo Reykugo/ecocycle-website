@@ -18,20 +18,28 @@
         "FR": "Notre machine SHARE&CO est un nouveau concept alliant publicité, promotions et bien-sûr le recyclage du verre et du plastique.",
         "EN": "Our SHARE&CO machine is a new concept combining advertising, promotions and of course the recycling of glass and plastic."
     },
-    "share&co-purpose":{
-        "FR": "Notre machine SHARE&CO est un nouveau concept alliant publicité, promotions et bien-sûr le recyclage du verre et du plastique.",
-        "EN": "Our SHARE&CO machine is a new concept combining advertising, promotions and of course the recycling of glass and plastic."
-    },
 
     "share&co-utility":{
         "FR": "L’utilité est multiple : Les marques adoptent une stratégie RSE, et se donnent une bonne image tout en développant les achats dans leurs points de vente. Les utilisateurs, eux, adoptent un geste éco responsable et font des économies chez leurs marques préférées. En fonction du nombre de bouteilles recyclées, un cumul de point se fait et les utilisateurs peuvent mesurer leur performance dans un classement.",
         "EN": "The utility is multiple: The brands adopt a CSR strategy, and give themselves a good image while developing the purchases in their points of sale. The users, themselves, take an eco-friendly gesture and save at their favorite brands. Depending on the number of bottles recycled, a cumulative point is made and users can measure their performance in a ranking. "
   
     },
-    "Actualités":{
-        "FR":"Actualités",
+
+    "jeanFekoi-description":{
+        "FR": "JeanFéKoi? est une application qui permet de scanner le code barre de ses déchets.",
+        "EN": "JeanFéKoi?Is an application that can scan the barcode of its waste."
+
+    },
+
+    "jeanFekoi-utility":{
+        "FR": " L’objectif est d’aider le consommateur à trier : ce qui se recycle, ce qui se jette, ce qui doit être traité spécifiquement (comme les piles ou certains objets qui doivent être ramenés à certains magasins pour être recyclés.",
+        "EN": "The objective is to help the consumer to transport: what is recycled, what is thrown away, it must be treated as they were or some objects that had to be brought back to some stores for to be recycled."
+    },
+    "Actuality":{
+        "FR":"Actualité",
         "EN":"Actuality"
     },
+
 
     "Utilité":{
         "FR":"Utilité",
