@@ -1,0 +1,113 @@
+.product-block{
+    width:100%;
+    height:80vh;
+    text-align:center;
+    .description-container{
+        color:white;
+        height:100%;
+        background-color: #F4F4F4;
+        .description{
+            padding:10%;
+            height:100%;
+            .title{
+                font-size: 30pt;
+                margin-bottom:30px;
+                font-family: $mainFont;
+            }
+            .text-block{
+                text-align: left;
+                margin-bottom:20px;
+                .block-title{
+                    font-size:20pt;
+                    margin-left:10px;
+                    font-family: $mainFont;
+                }
+                .header{
+                    @include justify-content(flex-start);
+                    margin-bottom:20px;
+                }
+                .text{
+                    text-align:left;
+                    line-height: 1.4em;
+                }
+            }
+        }
+
+    }
+    &.share-co{
+        .video-container{
+            width:60%;
+            height:100%;
+            overflow: hidden;
+            video{
+                object-fit: cover;
+                width:100%;
+                height:100%;
+            }
+        }
+        .description-container{
+            //background-color: #4473C5;
+            color:#4473C5;
+            width:40%;
+        }
+    }
+
+    &.eco-scan{
+        .img-container{
+            width:40%;
+            height:100%;
+            .smartphone-container{
+                position:relative;
+                width:50%;
+                max-width:calc(320px / 1.5);
+                max-height:calc(647px / 1.5);
+                .smartphone{
+                    width:100%;
+                    height:auto;
+                }
+                .screen{
+                    width:91.5%;
+                    height:79.7%;
+                    top:50%;
+                    left:50%;
+                    transform: translate(-50%, -50%);
+                    position:absolute;
+                }
+            }
+        }
+        .description-container{
+            //background-color: #538234;
+            color:#538234;
+            width:60%;
+        }
+    }
+
+    @media screen and (max-width:$screen-md) {
+        @include flex-direction(column);
+        height:max-content;
+        &.share-co, &.eco-scan{
+            .img-container, .video-container{
+                width:100%;
+            }
+            .description-container{
+                width:100%;
+                .description{
+                    padding: 20px;
+                    .title{
+                        margin-bottom:20px;
+                    }
+                }
+            }
+        }
+
+        &.eco-scan{
+            display:table;
+            .img-container{
+                padding: 10% 0%;  
+            }
+            .description-container{
+                display:table-header-group;
+            }
+        }
+    }
+}
