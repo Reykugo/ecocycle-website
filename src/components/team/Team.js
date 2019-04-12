@@ -11,22 +11,22 @@ class Team extends Component {
                 <h1 className="title">{t("About")} </h1>
                 <div className = "team-badges flex-row flex-center">
                     <Badge 
-                        img="sarah.jpg"
+                        img="sarah2.jpg"
                         name="Sarah SELLAM"
                         job="Financial Manager"
                     />
                     <Badge 
-                        img="yasmina.jpg"
+                        img="yasmina2.jpg"
                         name="Yasmina ARROUM"
                         job="Public relation officer"
                     />
                     <Badge 
-                        img="baptiste.png"
+                        img="baptiste2.png"
                         name="Baptiste Revereau"
                         job= "Artistic Director"
                     />
                     <Badge 
-                        img="kim.jpg"
+                        img="kim2.jpg"
                         name="Kimberley OHANA"
                         job="Lead Team Project"
                     />
